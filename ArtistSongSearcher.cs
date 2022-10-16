@@ -36,7 +36,7 @@ namespace ArtistSongSearch
                 throw new ArgumentException("No CSV File passed");
 
             if (!File.Exists(csvFile))
-                throw new ArgumentException("Configured CSV File not existing");
+                throw new ArgumentException($"Configured CSV File not existing @ {csvFile}");
 
             var currentArtist = string.Empty;
 
