@@ -32,6 +32,8 @@ namespace ArtistSongSearch
 
         public ArtistSongSearcher(string csvFile, char seperator = ';')
         {
+            Console.WriteLine($"CSV File -> {csvFile}");
+
             if (string.IsNullOrEmpty(csvFile))
                 throw new ArgumentException("No CSV File passed to searcher");
 
